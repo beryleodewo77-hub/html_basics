@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f0f0;
+            font-family: "Lora", serif;
+            margin: 20px;
+        }
+
+        form {
+            width: 50%;
+            border: 1px solid #1d6d76;
+            padding: 12px;
+            color: #2f0101;
+            margin: auto;
+        }
+
+        .labelfull {
+            display: block;
+            color: #1d6d76;
+            margin-bottom: 6px;
+
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1b8521;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Form inputs: text, email,password,dob,date,phone,gender(use radio buttons,checkboxes and select dropdowns  ) -->
+
+    <form action="">
+        <label class="labelfull" for="fullName">Full Name:</label>
+        <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Enter your full name"
+            required>
+
+        <label class="labelfull" for="email">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email address"
+            required>
+
+        <label class="labelfull" for="password">Password:</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="Enter your password"
+            required>
+
+        <label class="labelfull" for="dob">Date of Birth:</label>
+        <input class="form-control" type="date" name="dob" id="dob" required min="1940-01-01" max="2008-12-31">
+
+        <label class="labelfull" for="phone">Phone Number:</label>
+        <input class="form-control" type="tel" name="phone" id="phone" placeholder="+254 7XX XXX XXX" required>
+
+        <label class="labelfull">Gender:</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female" id="female" checked>
+        <label for="female">Female</label>
+
+        <br>
+        <br>
+        <label> select your favorite Sports:</label>
+        <br>
+        <input type="checkbox" name="tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+        <br>
+        <input type="checkbox" name="football" id="football" value="football">
+        <label for="football">Football</label>
+        <br>
+        <input type="checkbox" name="basketball" id="basketball" value="basketball">
+        <label for="basketball">Basketball</label>
+        <br>
+        <input type="checkbox" name="swimming" id="swimming" value="swimming">
+        <label for="swimming">Swimming</label>
+        <br>
+        <input type="checkbox" name="running" id="running" value="running">
+        <label for="running">Running</label>
+        <br>
+        <input type="checkbox" name="cycling" id="cycling" value="cycling">
+        <label for="cycling">Cycling</label>
+        <br>
+        <input type="checkbox" name="volleyball" id="volleyball" value="volleyball">
+        <label for="volleyball">Volleyball</label>
+        <br>
+
+        <label class="labelfull" for="county">County:</label>
+        <select class="form-control" name="county" id="county">
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="eldoret">Eldoret</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="kakamega">Kakamega</option>
+        </select>
+
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+</body>
+
+</html>
