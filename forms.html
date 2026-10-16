@@ -37,7 +37,12 @@
             box-sizing: border-box;
             margin-bottom: 12px;
         }
-        
+
+        #age {
+            width: 300px;
+            margin: 10px 0;
+        }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -119,8 +124,11 @@
             <option value="nairobi">Nairobi</option>
             <option value="kakamega">Kakamega</option>
         </select>
-
-
+        <br>
+        <label for="age">Age: <span id="ageValue">25</span></label>
+        <input type="range" name="age" id="age" min="0" max="100" value="25" step="1"
+            oninput="ageValue.textContent=this.value">
+        <br>
 
         <button type="submit">Submit</button>
 

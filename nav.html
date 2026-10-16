@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Navigation allows users to move between different pages or sections of a website -->
+    <title>Navigation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f2e7e7;
+            border-bottom: 2px solid #ccc;
+
+        }
+
+        .nav-items {
+            width: 70%;
+            background-color: #faeded;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-items ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-items li {
+            margin-right: 20px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #391f1f;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        .nav-items a:hover {
+            color: #f747ee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- semantic tags give meaning to the structure of the page  -->
+    <nav>
+        <div class="nav-items">
+            <img src="images/mariia-berezovsky-d64-ghA_rH4-unsplash.jpg" alt="facebook logo " width="50" height="50">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Divs</a></li>
+                <li><a href="#">Tables</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Flex</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+</body>
+
+</html>
