@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+:root {
+    --brand-green: #038645;
+    --brand-dark: #1f2d3d;
+    --soft-bg: #f4f8f7;
+
+}
+
+body {
+        color: var(--brand-dark);
+    font-family: '"Cormorant Garamond",serif';
+
+}
+
+.brand {
+    color: var(--brand-green);
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dark-title {
+    color: var(--brand-dark);
+}
+
+.brand:hover {
+    color: #0c2e1e;
+}
+
+.nav-link {
+    color: #525961;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brand-green) !important;
+}
+
+.btn-success {
+    background-color: var(--brand-green) !important;
+    border-radius: 3px;
+    transition: background-color 2s;
+}
+
+.btn-success:hover {
+    background-color: #176e33 !important;
+}
+
+.hero {
+    padding: 3.5rem;
+    background: linear-gradient(120deg, #f0f5f5, #d4d6d6);
+}
+
+.top-title {
+    color: var(--brand-green);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.hero h1 {
+    line-height: 0.08;
+}
+
+.section-heading p {
+    margin-bottom: 0.2rem;
+}
+
+.card {
+    border-color: #c1c4c7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 7px -20px 30px 3px rgba(0, 0, 0, 0.31);
+    border-radius: 20px;
+}
+.about-section{
+    background-color: var(--soft-bg);
+}
+.about-section i{
+    color: var(--brand-green);
+    font-size: 2rem;
+}
+/* TODO center it */
+.about-section p{
+    max-width: 800px;
+    margin:auto
+
+}
+.footer{
+    background-color: #555a61;
+    color: white;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color:aqua;
+    text-decoration: underline;
+}
+.copyright{
+    background-color:#404142 ;
+}
